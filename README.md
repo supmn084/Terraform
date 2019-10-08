@@ -16,7 +16,7 @@ git clone https://github.com/supmn084/Terraform.git
 This assumes you have terraform  > 0.12.10 installed on the operating system of your choice, almost all of this is ran on windows, or Windows Subsystem for Linux
 
 Instructions for Installing on a Linux machine running WSL
-Install unzip
+
 ```
 sudo apt-get install unzip
 ```
