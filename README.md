@@ -29,7 +29,7 @@ wget https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_am
 Extract the downloaded file archive
 
 ```
-unzip terraform_0.12.7_linux_amd64.zip
+unzip terraform_0.12.10_linux_amd64.zip
 ```
 Move the executable into a directory searched for executables
 
