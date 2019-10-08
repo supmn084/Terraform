@@ -16,24 +16,31 @@ git clone https://github.com/supmn084/Terraform.git
 This assumes you have terraform 12.0 installed on the operating system of your choice, almost all of this is ran on windows, or Windows Subsystem for Linux
 
 Instructions for Installing on a Linux machine running WSL
-* Install unzip
-
-* sudo apt-get install unzip
+Install unzip
+```
+sudo apt-get install unzip
+```
 Confirm the latest version number on the terraform website:
-
-* https://www.terraform.io/downloads.html
+ https://www.terraform.io/downloads.html
 Download latest version of the terraform (substituting newer version number if needed)
-
-* wget https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_amd64.zip
+```
+wget https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_amd64.zip
+```
 Extract the downloaded file archive
 
-* unzip terraform_0.12.7_linux_amd64.zip
+```
+unzip terraform_0.12.7_linux_amd64.zip
+```
 Move the executable into a directory searched for executables
 
-* sudo mv terraform /usr/local/bin/
+```
+sudo mv terraform /usr/local/bin/
+```
 Run it
 
+```
 terraform --version 
+```
 
 ### Folder Layout
 
