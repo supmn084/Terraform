@@ -26,7 +26,11 @@ resource "aws_security_group" "instance"{
     }
 }
 variable "server_port" {
-    description = "The port the server will use for in and oubound http requests"
+    description = "The port the server will use for in and outbound http requests"
     type = number
     default = 8080
+}
+output "public_ip"{
+value = aws_instance.test1.public_ip
+description = "The Public IP address of Test1 Web Server"
 }
