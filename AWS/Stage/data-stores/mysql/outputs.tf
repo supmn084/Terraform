@@ -1,0 +1,8 @@
+output "address"{
+    value = aws_db_instance.example.address
+    description = "Connecft to the DB at this endpoint"
+}
+output "port"{
+    value = aws_db_instance.example.port
+    description = "The port the DB is listening on"
+}
