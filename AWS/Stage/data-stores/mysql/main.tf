@@ -10,6 +10,8 @@ resource "aws_db_instance" "example" {
     name = "example_database"
     username = "admin"
     password = var.db_password
+    skip_final_snapshot = true
+    # this allows for deletion of this with terraform destroy
 }
 #the password will need to be entered in manually, can set by declaring it before runnign with
 #export TF_VAR_db_password = "(YOUR_DB_PASSWORD)" then running terraform apply
