@@ -77,8 +77,8 @@ Nothing to see here
 
 ## Acknowledgments
 
-* Thanks to groovemonkey for his Youtube videos that got me started and this project - https://github.com/groovemonkey/digitalocean-terraform
-* Parts taken from Terraform Up & Running Second Edition by Yevgeniy Brikman
+* Big thank you to https://www.ybrikman.com/ for the helpful guide. Buy the book!
+* Parts taken and played around with from Terraform Up & Running Second Edition by Yevgeniy Brikman
 * I'll add more as I go along!
 * Thanks for reading to this point
 
