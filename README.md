@@ -46,11 +46,11 @@ This repo for now, follows most of the code in Terraform up and running in AWS. 
 export AWS_ACCESS_KEY_ID="<SECRET>"
 export AWS_SECRET_ACCESS_KEY="<SECRET>"
 ```
-
+Change your directory into whatever example you want to deploy and run..
 ```
 terraform plan
 ```
-To see what will be launched, and if there are any errors
+To see what will be launched, and if there are any errors. Correct them to then launch...
 
 ```
 terraform apply 
