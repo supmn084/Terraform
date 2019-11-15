@@ -33,6 +33,16 @@ resource "aws_launch_configuration" "example" {
   }
 }
 
+data "template_file" "user_data" {
+  template = file("user-data.sh")
+
+  vars = {
+    server_port = var.server_port
+    db_address  = data.terraform_remote_state.db.outputs.address
+    db_port     = data.terraform_remote_state.db.outputs.port
+  }
+}
+
 resource "aws_autoscaling_group" "example" {
   launch_configuration = aws_launch_configuration.example.name
   vpc_zone_identifier  = data.aws_subnet_ids.default.ids
@@ -160,12 +170,3 @@ data "terraform_remote_state" "db"{
   }
 }
 
-data "template_file" "user_data" {
-  template = file("user-data.sh")
-
-  vars = {
-    server_port = var.server_port
-    db_address = data.terraform_remote_state.db.outputs.db_address
-    db_port = data.terraform_remote_state.db.outputs.port
-  }
-}
