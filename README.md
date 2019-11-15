@@ -41,7 +41,26 @@ Run it
 ```
 terraform --version 
 ```
+This repo for now, follows most of the code in Terraform up and running in AWS. You'll need to make sure you're hooked into your AWS account with permissions. Store those keys in your session by
+```
+export AWS_ACCESS_KEY_ID="<SECRET>"
+export AWS_SECRET_ACCESS_KEY="<SECRET>"
+```
 
+```
+terraform plan
+```
+To see what will be launched, and if there are any errors
+
+```
+terraform apply 
+```
+Launches your config, before actually launching you'll see what it's planning to do, yes will launch your config.
+
+```
+terraform destroy
+```
+Will break down everything when you're done!
 ### Folder Layout
 
 You'll find various projects I've worked on or created in their own folders
