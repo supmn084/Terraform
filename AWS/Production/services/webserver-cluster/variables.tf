@@ -1,18 +1,3 @@
-variable "cluster_name"{
-  description = "The name to use for all the cluster resources"
-  type = string
-}
-
-variable = "db_remote_state_bucket"{
-  descripition = " the name of the S3 b ucket for the database remote state"
-  type = string
-}
-
-variable = "db_remote_state_key"{
-  description = "The path for the databse's remote state in S3"
-  type = string
-}
-
 variable "server_port" {
   description = "The port the server will use for HTTP requests"
   type        = number
