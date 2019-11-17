@@ -2,10 +2,6 @@ terraform {
   required_version = ">= 0.12, < 0.13"
 }
 
-
-  # Allow any 2.x version of the AWS provider
-  version = "~> 2.0"
-}
 #sets state file to be stored in my bucket location
 terraform{
 backend "s3"{
